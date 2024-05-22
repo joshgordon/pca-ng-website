@@ -33,7 +33,7 @@
     <div class="container is-full-screen">
         <header>
             <div class="top is-center is-vertical-align">
-                <img class="is-rounded" width="75px" height="75px" src="{{ site.logo }}" alt="logo">
+                <img width="75px" height="75px" src="{{ site.logo }}" alt="logo">
                 <h3 class="text-center">{{ site.name }}{% if site.badge.enable == true %}<span class="iconify-inline badge"
                         data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>{% endif %}</h3>
                 <p class="text-center">{{ site.description }}</p>
@@ -41,18 +41,18 @@
         </header>
 
         <!-- Dark / Light Mode Switch -->
-        {% include theme-switch.html %}
+	<!--{% include theme-switch.html %}-->
 
         <!-- Social Media Links -->
-        {% include social.html %}
+	<!--{% include social.html %}-->
 
         <!-- Insta/TikTok/YouTube Link-in-bio -->
-        {% include bio.html %}
+	<!--{% include bio.html %}-->
 
         <!-- Link Buttons -->
         {% include links.html %}
 
-        {% include footer.html %}
+	<!--{% include footer.html %}-->
     </div>
     <script src="assets/script.js"></script>
 </body>
