@@ -2,7 +2,7 @@
     {% for category in site.data.links %}
     <h5 class="text-center">{{ category.category }}</h5>
     {% if category.description %}
-    <div class="is-center"><div>{{ category.description | markdownify }}</div></div>
+        <div class="is-center"><div>{{ category.description | markdownify }}</div></div>
     {% endif %}
     {% for item in category.items %}
     <div class="row">
@@ -19,5 +19,8 @@
             </div>
         </div>
         {% endfor %}
+        {% if category.enddescription %}
+            <div class="is-center"><div>{{ category.enddescription | markdownify }}</div></div>
+        {% endif %}
         {% endfor %}
 </main>
