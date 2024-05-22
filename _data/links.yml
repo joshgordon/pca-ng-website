@@ -9,7 +9,13 @@
         # tag: New
 
 - category: RUFormal 2024
-  description: Get your order in for RUFormal on Wednesday Night before bedtime Sunday!
+  description: |
+    Get your order in for RUFormal on Wednesday Night before bedtime Sunday!
+    
+    Address for Kickstand Kitchen:
+    > 507 W Crawford Avenue<br>
+    > Connellsville, PA 15425
+
   items:
     - title: Menu
       url: https://kickstandkitchen.com/#efe1a7ab-4453-4179-83c9-ecc22da90e80
