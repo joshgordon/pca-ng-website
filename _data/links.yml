@@ -18,6 +18,9 @@
       url: https://forms.gle/7LUDRzsPUsbdLKyN8
       icon: lets-icons:order
 
-- category: Speaker Notes
-  description: Check back here later for notes from our Speaker
+- category: Morning Devos
+  description: Coming soon!
+  items: []
+- category: Speaker Notes / Discussion Questions
+  description: Check back here later for notes and discussion questions from our Speaker
   items: []
