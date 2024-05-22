@@ -1,8 +1,11 @@
 - category: Details
   items:
-    - title: Packing List
+    - title: Packing List and other details
       url: /assets/Packing%20List%202024.pdf
       icon: mingcute:suitcase-line
+    - title: Laurelville Retreat Center
+      url: https://maps.app.goo.gl/4NgiifEgQvzYkp4a8
+      icon: pepicons-pencil:map
     - title: Schedule
       url: /assets/Schedule%202024.pdf
       icon: akar-icons:schedule
