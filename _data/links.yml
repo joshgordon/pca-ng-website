@@ -40,8 +40,7 @@
       url: "/assets/Examen.original.1575916300.pdf"
       tag: "Thursday Morning"
 - category: Speaker Notes / Discussion Questions
-  description: Check back here later for notes and discussion questions from our Speaker
-  items: []
+  items:
     - title: Sunday Night Small Group Questions
       url: /assets/Small Group Day 1.pdf
       icon: hugeicons:question
