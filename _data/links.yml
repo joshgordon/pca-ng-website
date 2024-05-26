@@ -42,6 +42,6 @@
 - category: Speaker Notes / Discussion Questions
   description: Check back here later for notes and discussion questions from our Speaker
   items: []
-#     - title: Sunday Night Small Group Questions
-#       url: /assets/Small Group Day 1.pdf
-#       icon: hugeicons:question
+    - title: Sunday Night Small Group Questions
+      url: /assets/Small Group Day 1.pdf
+      icon: hugeicons:question
