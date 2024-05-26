@@ -25,8 +25,16 @@
       url: https://maps.app.goo.gl/FUZ2BZkbBG1jKBP7A
 
 - category: Morning Devos
-  description: Coming soon!
-  items: []
+  items: 
+    - title: Guided Lord's Prayer
+      url: "assets/Guided Lord's Prayer.pdf"
+      tag: Sunday Night
+    - title: Meditation and Prayer Tool
+      url: "/assets/Meditation and Prayer tool.pdf"
+      tag: "Monday/Tuesday"
+    - title: Examen
+      url: "/assets/Examen.original.1575916300.pdf"
+      tag: "Thursday Morning"
 - category: Speaker Notes / Discussion Questions
   description: Check back here later for notes and discussion questions from our Speaker
   items: []
