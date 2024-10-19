@@ -5,8 +5,8 @@ theme: linkhub-jekyll-theme
 name: PCA NextGen Conference 2024
 tagline: 
 description: Important links and info for PCA's NextGen conference
-favicon: https://images.squarespace-cdn.com/content/v1/616b7c65da98e408a7aae6f9/bcf65654-9fad-455d-ae7f-01be110d05c4/favicon.ico
-logo: https://images.squarespace-cdn.com/content/v1/616b7c65da98e408a7aae6f9/98fc3041-3428-4ad1-8cee-4ef4ae215675/pca-net-logo.png?format=1500w
+favicon: "/assets/NextGenLogoColor.svg"
+logo: ""
 url: https://example.com # URL of your website
 locale: en_US # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
   # ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if not needed.
