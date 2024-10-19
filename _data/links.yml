@@ -1,7 +1,7 @@
 - category: Details
   items:
     - title: Schedule
-      url: /assets/Schedule.pdf
+      url: /assets/schedule.pdf
       icon: akar-icons:schedule
     - title: Freetime Options
       url: /assets/Freetime%20Options.pdf
