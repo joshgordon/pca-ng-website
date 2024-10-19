@@ -6,6 +6,9 @@
     - title: Freetime Options
       url: /assets/Freetime%20Options.pdf
       icon: mdi:location
+    - title: Breakout Seminar Options
+      url: /assets/Breakout%20Seminar%20Options.pdf
+      icon: guidance:conference-room
 
 # - category: RUFormal 2024
 #   items:
