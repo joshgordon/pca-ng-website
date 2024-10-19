@@ -3,12 +3,15 @@
     - title: Schedule
       url: /assets/schedule.pdf
       icon: akar-icons:schedule
-    - title: Freetime Options
-      url: /assets/Freetime%20Options.pdf
-      icon: mdi:location
     - title: Breakout Seminar Options
       url: /assets/Breakout%20Seminar%20Options.pdf
       icon: guidance:conference-room
+    - title: Freetime Options
+      url: /assets/Freetime%20Options.pdf
+      icon: mdi:location
+    - title: Feedback Form
+      url: https://forms.office.com/r/8h2wD5yeSc
+      icon: mdi:feedback-outline
 
 # - category: RUFormal 2024
 #   items:
