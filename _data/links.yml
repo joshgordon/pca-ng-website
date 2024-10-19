@@ -1,44 +1,32 @@
 - category: Details
   items:
-    - title: Laurelville Map
-      url: https://www.google.com/maps/d/edit?mid=1QAPMj3rjUd_BvjmRhiJgnDiF6hbiwetT&usp=drive_link
-      icon: material-symbols:map-outline
-    - title: Meal Schedule
-      url: /assets/Meal Schedule.pdf
-      icon: mingcute:fork-spoon-fill
     - title: Schedule
-      url: /assets/Schedule%202024.pdf
+      url: /assets/Schedule.pdf
       icon: akar-icons:schedule
-    - title: Packing List and other details
-      url: /assets/Packing%20List%202024.pdf
-      icon: mingcute:suitcase-line
-    - title: Laurelville Retreat Center
-      url: https://maps.app.goo.gl/4NgiifEgQvzYkp4a8
-      icon: pepicons-pencil:map
+    - title: Freetime Options
+      url: /assets/Freetime%20Options.pdf
+      icon: mdi:location
 
-- category: RUFormal 2024
-  items:
-    - title: Menu
-      url: https://kickstandkitchen.com/#efe1a7ab-4453-4179-83c9-ecc22da90e80
-      icon: material-symbols:menu-book-outline
-#     - title: Order Form
-#       url: https://forms.gle/7LUDRzsPUsbdLKyN8
-#       icon: lets-icons:order
-    - title: Kickstand Kitchen
-      icon: pepicons-pencil:map
-      url: https://maps.app.goo.gl/FUZ2BZkbBG1jKBP7A
-
-- category: Morning Devos
-  items: 
-    - title: Meditation and Prayer Tool
-      url: "/assets/Meditation and Prayer tool.pdf"
-      tag: "Monday/Tuesday"
-    - title: Examen
-      url: "/assets/Examen.original.1575916300.pdf"
-      tag: "Thursday Morning"
-
-- category: Speaker Notes / Discussion Questions
-  items:
-    - title: Small Group Questions
-      url: /assets/SuCo Small Group 2024.pdf
-      icon: hugeicons:question
+# - category: RUFormal 2024
+#   items:
+#     - title: Menu
+#       url: https://kickstandkitchen.com/#efe1a7ab-4453-4179-83c9-ecc22da90e80
+#       icon: material-symbols:menu-book-outline
+#     - title: Kickstand Kitchen
+#       icon: pepicons-pencil:map
+#       url: https://maps.app.goo.gl/FUZ2BZkbBG1jKBP7A
+# 
+# - category: Morning Devos
+#   items: 
+#     - title: Meditation and Prayer Tool
+#       url: "/assets/Meditation and Prayer tool.pdf"
+#       tag: "Monday/Tuesday"
+#     - title: Examen
+#       url: "/assets/Examen.original.1575916300.pdf"
+#       tag: "Thursday Morning"
+# 
+# - category: Speaker Notes / Discussion Questions
+#   items:
+#     - title: Small Group Questions
+#       url: /assets/SuCo Small Group 2024.pdf
+#       icon: hugeicons:question
