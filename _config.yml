@@ -5,7 +5,7 @@ theme: linkhub-jekyll-theme
 name: PCA NextGen Conference 2024
 tagline: 
 description: Important links and info for PCA's NextGen conference
-favicon: "/assets/NextGenLogoColor.svg"
+favicon: "/assets/favicon.png"
 logo: ""
 url: https://example.com # URL of your website
 locale: en_US # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
