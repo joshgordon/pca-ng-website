@@ -12,10 +12,14 @@
     - title: Feedback Form
       url: https://forms.office.com/r/8h2wD5yeSc
       icon: mdi:feedback-outline
+    - title: Black Flag Social House
+      url: https://maps.app.goo.gl/Mj7eQPhhvFcpbC4z7
+      icon: bxs:map
     - title: Google Photos Album
       url: https://photos.app.goo.gl/2Xn3HnqmX9x8YwDAA
       icon: fa:photo
       tag: New!
+      
 
 # - category: RUFormal 2024
 #   items:
