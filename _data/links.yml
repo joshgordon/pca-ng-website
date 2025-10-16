@@ -15,33 +15,8 @@
     - title: Google Photos Album
       url: https://photos.app.goo.gl/2Xn3HnqmX9x8YwDAA
       icon: fa:photo
-      tag: New!
+      # tag: New!
     - title: PCA Bookstore Discount Code
       url: /bookstore.html
       icon: fa-solid:book
-      tag: New!
-      
-
-# - category: RUFormal 2024
-#   items:
-#     - title: Menu
-#       url: https://kickstandkitchen.com/#efe1a7ab-4453-4179-83c9-ecc22da90e80
-#       icon: material-symbols:menu-book-outline
-#     - title: Kickstand Kitchen
-#       icon: pepicons-pencil:map
-#       url: https://maps.app.goo.gl/FUZ2BZkbBG1jKBP7A
-# 
-# - category: Morning Devos
-#   items: 
-#     - title: Meditation and Prayer Tool
-#       url: "/assets/Meditation and Prayer tool.pdf"
-#       tag: "Monday/Tuesday"
-#     - title: Examen
-#       url: "/assets/Examen.original.1575916300.pdf"
-#       tag: "Thursday Morning"
-# 
-# - category: Speaker Notes / Discussion Questions
-#   items:
-#     - title: Small Group Questions
-#       url: /assets/SuCo Small Group 2024.pdf
-#       icon: hugeicons:question
+      # tag: New!
