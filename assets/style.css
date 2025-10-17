@@ -300,7 +300,7 @@ footer {
 }
 
 #blue {
-    color: #233650;
+    fill: #233650;
 }
 .dark #blue {
     fill: #37558d !important;
