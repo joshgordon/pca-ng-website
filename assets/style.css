@@ -299,18 +299,6 @@ footer {
 }
 }
 
-#nextgen {
-    fill: #253451;
-}
-
-#pca {
-    fill: #C95C28;
-}
-
-#student-ministry {
-    fill: #C95C28;
-}
-
-.dark #nextgen {
-    fill: #37558d;
+.dark #blue {
+    fill: #37558d !important;
 }
