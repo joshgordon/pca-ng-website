@@ -1,33 +1,33 @@
 - category: Details
   items:
+    - title: Feedback Form
+      url: https://forms.office.com/r/skF4HEabYu
+      icon: mdi:feedback-outline
+      tag: New!
+    - title: Google Photos Album
+      url: https://photos.app.goo.gl/SCyqKV5RPWRSdWhY9
+      icon: fa:photo
     - title: Schedule
       url: /assets/schedule.pdf
       icon: akar-icons:schedule
     - title: Breakout Seminar Options
       url: /assets/Breakout%20Seminar%20Options.pdf
       icon: guidance:conference-room
-    - title: Freetime Options
-      url: /assets/Freetime%20Options.pdf
-      icon: mdi:location
-    - title: Dining Options
-      url: /assets/Dining%20Options.pdf
-      icon: mdi:silverware-fork-knife
+    # - title: Freetime Options
+    #   url: /assets/Freetime%20Options.pdf
+    #   icon: mdi:location
+    # - title: Dining Options
+    #   url: /assets/Dining%20Options.pdf
+    #   icon: mdi:silverware-fork-knife
     - title: Conference Map
       url: /assets/Nextgen%20Conference%20Map.pdf
       icon: mdi:map
     - title: Chapelgate Presbyterian Church
       url: https://maps.app.goo.gl/wckfFyJNvALomsKF9
       icon: mdi:map-marker-star-outline
-    - title: Oscar's Alehouse
-      url: https://maps.app.goo.gl/GJxjGgyNAFiK3xUEA
-      icon: mdi:map-marker
-    - title: Google Photos Album
-      url: https://photos.app.goo.gl/SCyqKV5RPWRSdWhY9
-      icon: fa:photo
-    # - title: Feedback Form
-    #   url: https://forms.office.com/r/8h2wD5yeSc
-    #   icon: mdi:feedback-outline
-    #   # tag: New!
+    # - title: Oscar's Alehouse
+    #   url: https://maps.app.goo.gl/GJxjGgyNAFiK3xUEA
+    #   icon: mdi:map-marker
     # - title: PCA Bookstore Discount Code
     #   url: /bookstore.html
     #   icon: fa-solid:book
