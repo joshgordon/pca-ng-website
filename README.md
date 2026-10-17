@@ -44,26 +44,30 @@ Link to it from `data/links.yml` with `url: /bookstore/`. A folder of pages in `
 gets an index page listing them.
 
 The conference handouts are pages styled to print like the original PDFs (logo, letter size,
-brand colors; Dining and Map print landscape). Use the browser's Print to get a handout.
+brand colors; the map prints landscape). Use the browser's Print to get a handout.
 
 - `content/schedule.md` — rendered from `data/schedule.yml`. A `seminars: "10:30"` event pulls
   that slot's sessions (titles, rooms, links) from `data/seminars.yml`.
-- `content/seminars.md` — rendered from `data/seminars.yml`. Add `short:` to a seminar for a
-  shorter title on the schedule.
-- `content/free-time.md`, `content/dining.md` — plain Markdown.
-- `content/map.md` — floor plan drawn as SVG in `layouts/_shortcodes/map.html`.
+- `content/seminars.md` — rendered from `data/seminars.yml`. Optional per-seminar fields for the
+  schedule: `short` (shorter title), `who` (shown in parentheses), `short_location`.
+- `content/st-louis.md` — plain Markdown (things to do, coffee, restaurants).
+- `content/map.md` — floor plan of The Commons drawn as SVG in `layouts/_shortcodes/map.html`,
+  plus the room legend.
 
 Page front matter options (under `params:`):
 
 - `class` — added to `<body>` for page-specific styles
 - `subtitle` — line under the title
-- `print_logo: false` — don't print the NEXTGEN logo above the title
+- `print_logo` — logo printed above the title: `conference` (default), `cdm`, or `false` for none
 - `print_title: false` — hide the title when printed
 
 Shortcodes available in pages:
 
 - `{{< addr "123 Main St, Town, MD" >}}` — address that links to Google Maps (plain text when printed)
-- `{{< print-logo >}}` — NEXTGEN logo that only appears when printed
+- `{{< place "Name" >}}` — place name that links to a Google Maps search (`"Name, St. Louis, MO"`
+  unless a second argument gives the search)
+- `{{< legend >}}…{{< /legend >}}` — Markdown laid out in columns (map room legend)
+- `{{< print-logo >}}` / `{{< print-logo "cdm" >}}` — logo that only appears when printed
 - `{{< checklist >}}` — renders a list with checkboxes (packing lists)
 - `{{< dontbring >}}` — renders a list with X bullets
 - `{{< day "monday" >}}…{{< /day >}}` — collapsible section per day; add `{{< open-today >}}` to auto-expand today and later days

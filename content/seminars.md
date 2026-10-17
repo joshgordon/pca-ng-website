@@ -1,7 +1,8 @@
 ---
-title: 2025 Breakout Seminar Options
+title: 2026 Breakout Seminar Options
 params:
   class: seminars
+  print_logo: cdm
 ---
 
 {{< seminars >}}

@@ -397,12 +397,11 @@ footer {
   fill: #37558d !important;
 }
 
-/* NextGen documents (schedule, seminars, free time, dining, map) */
+/* NextGen documents (schedule, seminars, St. Louis guide, map) */
 :root {
   --nextgen-navy: #243551;
   --nextgen-orange: #c85b28;
   --nextgen-green: #7fad40;
-  --map-green: #7ed957;
 }
 .print-only {
   display: none;
@@ -518,82 +517,142 @@ a.addr {
   font-weight: 700;
 }
 
-.free-time .page-content h3 {
-  font-size: 1.05em;
-  margin: 1.4em 0 0.4em;
+.st-louis .page-content h2 {
+  color: var(--nextgen-orange);
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin: 1.4em 0 0.3em;
 }
-.free-time .page-content ul {
+.st-louis .page-content h3 {
+  font-size: 1em;
+  margin: 1em 0 0.3em;
+}
+.st-louis .page-content ul {
   margin: 0;
-}
-
-.dining .page-content h2 {
-  font-size: 1.15em;
-  margin: 1.4em 0 0.6em;
-}
-.dining .page-content p {
-  margin: 0.4em 0;
-  line-height: 1.35;
 }
 
 .map .page-content {
   max-width: 1100px;
+  min-width: 0;
 }
-.map .subtitle {
-  color: var(--map-green);
+.map-scroll {
+  overflow-x: auto;
 }
-.floor-map {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-.floor-map > svg {
-  flex: 1 1 280px;
-  max-width: 500px;
+.map-scroll svg {
+  display: block;
+  width: 100%;
+  min-width: 600px;
   height: auto;
+  background: #fff;
+  border-radius: 4px;
 }
-.m-light {
-  fill: #d9d9d9;
+.c-room {
+  fill: #1189d6;
+  stroke: #000;
+  stroke-width: 5;
+  stroke-linejoin: round;
 }
-.m-dark {
-  fill: #a6a6a6;
-}
-.m-green {
-  fill: var(--map-green);
-}
-.m-line {
+.c-wall {
   fill: none;
-  stroke: #222;
-  stroke-width: 1.5;
+  stroke: #000;
+  stroke-width: 5;
 }
-.m-label,
-.m-big {
-  font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
-  font-weight: 700;
+.c-label rect {
+  fill: #fff;
+}
+.c-label text,
+.c-wordmark {
+  font-family: Oswald, "Arial Narrow", sans-serif;
   text-anchor: middle;
-  fill: #111;
-}
-.m-label {
-  font-size: 18px;
-}
-.m-thin {
-  font-weight: 500;
-}
-.m-big {
-  font-size: 48px;
   fill: #000;
+}
+.c-label text {
+  font-size: 32px;
+}
+.c-label text.c-small {
+  font-size: 24px;
+}
+.c-wordmark {
+  font-size: 56px;
+  font-weight: 500;
+  text-anchor: start;
+  fill: #1b2a47;
+}
+.c-hall {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  text-anchor: middle;
+  fill: #000;
+}
+.c-icon {
+  fill: #222;
+}
+.c-desk {
+  fill: none;
+  stroke: #333;
+  stroke-width: 3;
+}
+@media screen {
+  .dark .map-scroll svg {
+    background: transparent;
+  }
+  .dark .c-room {
+    fill: #1667a6;
+    stroke: #c9d3dd;
+  }
+  .dark .c-wall {
+    stroke: #c9d3dd;
+  }
+  .dark .c-label rect {
+    fill: #0c0c0c;
+    fill-opacity: 0.8;
+  }
+  .dark .c-label text,
+  .dark .c-wordmark {
+    fill: #f5f5f5;
+  }
+  .dark .c-hall {
+    fill: #ccc;
+  }
+  .dark .c-icon {
+    fill: #e8e8e8;
+  }
+  .dark .c-desk {
+    stroke: #ccc;
+  }
+}
+.map-legend {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  gap: 0 2rem;
+  margin-top: 1.5rem;
+}
+.map-legend p {
+  margin: 0 0 1em;
+}
+.map-legend strong {
+  text-decoration: underline;
+}
+@media screen and (max-width: 599px) {
+  .map-legend {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 @media print {
+  /* Margins live on .container (repeated on every page via
+     box-decoration-break) so they survive a browser's "Margins: None". */
   @page {
     size: letter;
-    margin: 0.5in;
+    margin: 0;
   }
   @page landscape {
     size: letter landscape;
-    margin: 0.4in 0.5in;
+    margin: 0;
   }
-  body.dining,
   body.map {
     page: landscape;
   }
@@ -626,7 +685,12 @@ a.addr {
     max-width: none;
     min-height: 0;
     margin: 0;
-    padding: 0;
+    padding: 0.5in;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  body.map .container {
+    padding: 0.4in 0.5in;
   }
   .row,
   .col {
@@ -698,24 +762,24 @@ a.addr {
     padding: 0 0 0.04in 0.3in;
   }
   .sched-row.session {
-    grid-template-columns: minmax(0, 1fr) 2.45in;
+    grid-template-columns: minmax(0, 1fr) 2.25in;
     padding: 0 0 0 0.3in;
     font-size: 11.5pt;
     line-height: 1.15;
   }
   .sched-row.session .loc {
-    padding-left: 0.45in;
+    padding-left: 0.25in;
   }
 
   .seminars .page-content {
-    font-size: 11.5pt;
-    line-height: 1.15;
+    font-size: 11pt;
+    line-height: 1.1;
   }
   .seminars header h3 {
     font-size: 19pt;
   }
   .page-content h2.slot {
-    font-size: 20pt;
+    font-size: 19pt;
     margin: 0.06in 0 0.04in;
   }
   .seminars .print-logo {
@@ -723,102 +787,87 @@ a.addr {
     margin-bottom: 0.08in;
   }
   .seminar {
-    margin: 0 0 0.14in;
+    margin: 0 0 0.12in;
   }
   .seminar h3 {
-    font-size: 15.5pt;
+    font-size: 14.5pt;
+    line-height: 1.1;
     margin: 0;
   }
   .seminar .speaker {
     color: var(--nextgen-navy);
-    font-size: 13pt;
+    font-size: 12.5pt;
     font-weight: 300;
     line-height: 1.15;
   }
   .seminar p {
-    margin: 0.04in 0 0;
-    line-height: 1.15;
+    margin: 0.03in 0 0;
+    line-height: 1.1;
   }
   .seminar .location {
     color: var(--nextgen-navy);
-    font-size: 13pt;
+    font-size: 12.5pt;
   }
 
-  .free-time .print-logo {
-    width: 4.5in;
-  }
-  .free-time header h3 {
-    color: #000;
-    font-size: 13pt;
-    text-transform: uppercase;
-    margin-bottom: 0.1in;
-  }
-  .free-time .page-content {
-    padding: 0 0.3in 0 0.5in;
-    font-size: 12pt;
-    line-height: 1.2;
-  }
-  .free-time .page-content h3 {
-    font-size: 12pt;
-    margin: 0.18in 0 0.08in;
-  }
-  .free-time .page-content ul {
-    padding-left: 0.6in;
-  }
-  .free-time .page-content li {
-    break-inside: avoid;
+  .print-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
-  .dining .container {
+  .st-louis .print-logo {
+    width: 4.6in;
+  }
+  .st-louis header h3 {
+    font-size: 17pt;
+    margin-bottom: 0.15in;
+  }
+  .st-louis .page-content {
     columns: 2;
     column-gap: 0.4in;
+    font-size: 11pt;
+    line-height: 1.25;
   }
-  .dining header h3 {
-    color: #000;
-    font-size: 21pt;
-    margin: 0 0 0.12in;
+  .st-louis .page-content h2 {
+    font-size: 14pt;
+    margin: 0.2in 0 0.04in;
   }
-  .dining .page-content {
-    font-size: 9.5pt;
-  }
-  .dining .page-content p {
-    margin: 0.035in 0;
-    line-height: 1.12;
-    break-inside: avoid;
-  }
-  .dining .page-content > p:first-child {
-    margin-bottom: 0;
-  }
-  .dining .page-content h2 {
-    font-size: 12.5pt;
-    margin: 0.2in 0 0.08in;
-  }
-  .dining #coffee--breakfast-spots {
-    break-before: column;
+  .st-louis .page-content h2:first-child {
     margin-top: 0;
   }
-  .dining .print-logo {
-    width: 4.3in;
-    margin: 0.8in auto 0;
+  #coffee-shops {
+    break-before: column;
+  }
+  .st-louis .page-content h3 {
+    font-size: 11pt;
+    margin: 0.12in 0 0.03in;
+  }
+  .st-louis .page-content ul {
+    padding-left: 0.25in;
+  }
+  .st-louis .page-content li {
+    break-inside: avoid;
   }
 
-  .map header h3 {
-    color: #000;
-    font-size: 30pt;
-    margin: 0;
-  }
-  .map .subtitle {
-    font-size: 20pt;
-    margin: 0 0 0.05in;
-  }
-  .floor-map {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-  .floor-map > svg {
-    flex: none;
-    width: auto;
+  .map .page-content {
     max-width: none;
-    height: 6.6in;
+  }
+  .map-scroll {
+    overflow: visible;
+  }
+  .map-scroll svg {
+    min-width: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .map-legend {
+    grid-template-columns: 2.7in 2.7in 2.7in;
+    gap: 0;
+    margin: 0.2in 0 0 0.05in;
+    font-size: 11pt;
+    line-height: 1.2;
+  }
+  .map-legend p {
+    margin: 0 0 0.15in;
   }
 }

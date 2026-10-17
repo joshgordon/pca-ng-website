@@ -18,7 +18,8 @@
     <div class="container is-full-screen">
         <header>
             <div class="top is-center is-vertical-align">
-                {{ if ne .Params.print_logo false }}<div class="print-only print-logo">{{ partial "logo.html" . }}</div>{{ end }}
+                {{ $logo := .Params.print_logo | default "conference" }}
+                {{ if ne .Params.print_logo false }}{{ partial "print-logo.html" $logo }}{{ end }}
                 <a class="site-logo" href="{{ .Site.Home.RelPermalink }}">{{ partial "logo-small.html" . }}</a>
                 <h3 class="text-center{{ if eq .Params.print_title false }} screen-only{{ end }}">{{ .Title }}</h3>
                 {{ with .Params.subtitle }}<p class="text-center subtitle">{{ . }}</p>{{ end }}

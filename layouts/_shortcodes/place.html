@@ -1,0 +1,2 @@
+{{- $name := .Get 0 -}}
+<a class="addr" href="https://maps.google.com/?q={{ .Get 1 | default (printf "%s, St. Louis, MO" $name) | urlquery }}" target="_blank">{{ $name }}</a>

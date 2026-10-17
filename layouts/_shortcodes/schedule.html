@@ -14,11 +14,17 @@
   {{ range where site.Data.seminars "slot" $slot }}
   {{ range .seminars }}
   <div class="sched-row session">
-    <a class="name" href="{{ $seminarsURL }}#{{ .title | anchorize }}">“{{ .short | default .title }}”</a>
-    <span class="loc">{{ strings.TrimPrefix "The " .location }}</span>
+    <a class="name" href="{{ $seminarsURL }}#{{ .title | anchorize }}">“{{ .short | default .title }}”{{ with .who }} ({{ . }}){{ end }}</a>
+    <span class="loc">{{ .short_location | default (strings.TrimPrefix "The " .location) }}</span>
   </div>
   {{ end }}
   {{ end }}
+  {{ end }}
+  {{ range .sessions }}
+  <div class="sched-row session">
+    <span class="name">{{ .name }}</span>
+    <span class="loc">{{ .location }}</span>
+  </div>
   {{ end }}
   {{ end }}
 </div>

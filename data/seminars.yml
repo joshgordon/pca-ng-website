@@ -1,96 +1,134 @@
-- slot: "10:30"
+# Optional fields used by the schedule:
+#   short           — shorter title
+#   who             — shown in parentheses after the title
+#   short_location  — shorter room name
+- slot: "10:45"
   seminars:
-    - title: Praying Through Psalm 23
+    - title: Great Commandment Soul Care
+      who: PACT - Jason
       speakers:
-        - David Kelly - New Hope Presbyterian Church, Eustis, FL
-      location: The Chapel
-      description: >-
-        Join David as he lead us through Psalm 23 devotionally. This is meant to be a time of refreshment and
-        an opportunity to feed together on God's Word. Please join us as we let the word of God dwell richly in
-        our hearts together and teach us and instruct us and train us to do what He has called us to do.
-
-    - title: "Better Together: Children’s and Student Ministry Partnership"
-      short: "Better together: Children’s and Youth Min Partnership"
-      speakers:
-        - Katie Flores - CDM Children’s Ministry Coordinator, Birmingham, AL
-        - Katie Gordon - CDM Student Ministries Administrator, Millersville, MD
-      location: Room 209/210
-      description: >-
-        Children’s and student ministries have different rhythms and challenges—but a shared mission to help
-        young people love Jesus. This session explores practical ways to strengthen connection,
-        communication, and collaboration between CM and SM, so together we can disciple kids and students
-        with greater unity and purpose.
-
-    - title: Connecting Students to the Truth
-      speakers:
-        - Matt Hedinger - Village Seven Presbyterian Church, Colorado Springs, CO
+        - Jason Pittman - PACT Ministries
       location: Youth Room
       description: >-
-        This is a condensed version of certification class on teaching. This seminar helps give us a framework for
-        preparing lessons for students as well as some techniques while teaching.
+        Take time to slow down and care for your soul through the paradigm of loving the Lord with all your heart,
+        soul, mind, and strength.
 
-- slot: "11:30"
+    - title: Maximizing the Impact of Volunteers
+      who: Emilio
+      speakers:
+        - Emilio Hood - Christ Central Church, Durham, NC
+      location: Banquet Room
+      description: >-
+        How do you view your volunteers? The answer to this question helps determine whether or not you’ll be
+        able to maximize the impact your volunteers have not only in your ministry, but in the lives of teens in
+        your church and community.
+
+    - title: "Considering the Why Before the What: The Practical Impact of a Philosophy of Ministry"
+      short: Considering the Why Before the What
+      who: RYM - Michael
+      speakers:
+        - Michael Hall - Reformed Youth Ministries (RYM)
+      location: Mosaic Room
+      description: >-
+        We all do ministry from somewhere. While sometimes we are aware of this, oftentimes we aren’t and this
+        “somewhere” can function like an unacknowledged operating system misguiding our ministry efforts. This
+        important and often overlooked principle impacts not only our ministry but also us as leaders. This
+        seminar will provide an introduction to the importance of understanding your philosophy of ministry (or
+        your ministry approach) and offer some principles to develop and apply it.
+
+- slot: "11:50"
   seminars:
-    - title: Sitting at the Feet of Jesus
-      speakers:
-        - Christian Graham - SeeJesus Ministry
-      location: The Chapel
-      description: >-
-        Sitting at the feet of Jesus with your students. Our heart’s desire is for each student to develop a deep
-        passion for Jesus. Using Mary’s devotion in Scripture—her choice to sit at Jesus’ feet—serves as a
-        powerful example. We will reflect on Mary’s love for Christ and explore how to cultivate a similar spirit of
-        attentive discipleship, learning not only to sit at His feet in worship and devotion, but also how to guide
-        others to do the same.
-
-    - title: Building Relationships with Your Elders, Coworkers, and Parents
-      speakers:
-        - Stephen Estock - CDM Coordinator, Lawrenceville, GA
-      location: Room 209/210
-      description: >-
-        Every interaction in the church is a mix of interests and expectations. How do we navigate those
-        interactions, especially when we feel insecure? The session will consider the power dynamics present
-        and how we can communicate with others in ways that build trust.
-
-    - title: "Navigating Gender Identity: Walking Alongside Students with Truth, Grace, and the Hope of the Gospel"
-      speakers:
-        - Steve Dallwig - Chapelgate Presbyterian Church, Marriottsville, MD
-      location: Youth Room
-      description: >-
-        Gender identity is one of the most confusing issues our students face today. The world has created
-        categories and narratives that distort God’s good design, and our students are being shaped by those
-        influences daily. This seminar will help you understand the pressures they face, shepherd them with
-        compassion and clarity, and equip your ministry to respond with both biblical truth, love and practical
-        guidance.
-
-- slot: "1:30"
-  seminars:
-    - title: Optimizing Games and Student Leadership
-      speakers:
-        - Tim Malone - Cornerstone Presbyterian Church, Landenberg, PA
-        - David Kelly - New Hope Presbyterian Church, Eustis, FL
-      location: The Chapel
-      description: >-
-        Do these two go together? Absolutely not! But wait – yes they can work together! David Kelly and Tim
-        Malone will work together to bring you a long list of games, some how tos, and then move the discussion
-        to growing student leadership!! All in one hour!!
-
-    - title: Let Jesus Shepherd Your Heart
+    - title: With God
+      who: Mikey
       speakers:
         - Mikey Puckett - Seven Rivers Church, Lecanto, FL
-      location: Room 209/210
-      description: >-
-        Student ministry is a beautiful calling—but it’s easy to love the work more than the One who called you.
-        When our identity depends on students’ responses instead of Christ’s grace, we lose our way. This
-        seminar invites you to rediscover the Good Shepherd who pursues your heart first. Before you can
-        shepherd others well, you must let Him shepherd you.
-
-    - title: "Walking Through the Valley with the Anxious Generation: Helping Students Face Fear with Faith in a World of Rising Anxiety"
-      short: Walking through the Valley with the Anxious Generation
-      speakers:
-        - Tonya Cherry - Counselor, Marriottsville, MD
       location: Youth Room
       description: >-
-        Today’s teens are more anxious than ever, and youth pastors are often on the front lines. This seminar
-        offers practical strategies for entering into honest, hope-filled conversations with students who are
-        struggling. We’ll explore ways to respond with empathy, create safe spaces, and remind them that Jesus
-        walks with them—even when the path feels dark.
+        Ministry can often be marked by loneliness and isolation. We can find ourselves in seasons where we
+        wonder, “Where is God?” But we still have to teach, disciple, evangelize and lead. This can feel
+        overwhelming when we are struggling in our own walks with the Lord. What does it look like to walk with
+        God in ministry when you are not okay? Does God even care? Should you even be in ministry?
+
+    - title: "More Than a Boss: Leading Student Ministry Staff with Care and Clarity"
+      short: More Than a Boss
+      who: Steve
+      speakers:
+        - Steve Dallwig - Chapelgate Presbyterian Church, Marriottsville, MD
+      location: Banquet Room
+      description: >-
+        You got into student ministry to invest in teenagers, and now you’re also responsible for the people who
+        invest in them. Leading a staff team takes more than a job description and a weekly meeting. It means
+        caring for your people’s souls, managing their work clearly and fairly, leading them toward a shared
+        vision, and developing them into the ministers God is shaping them to be. This seminar gives you
+        practical tools and a biblical framework for all four, so you can build a healthy team where people grow,
+        stay, and thrive, and where ministry to students keeps getting better because of it.
+
+    - title: "Caring for ALL of your Students: the Core, the Fringe, and those Off the Radar"
+      short: Caring for ALL of your Students
+      who: Isaac
+      speakers:
+        - Isaac Terwilleger - Grace Chapel, Lincoln, NE
+      location: Mosaic Room
+      description: >-
+        Youth workers have the greatest calling in the world. And we rejoice with Jesus when He said, “Let the
+        little children come to me and do not hinder them, for to such belongs the kingdom of heaven.” If we are
+        honest, sometimes our ministries miss those who are outside the normal and actually serve to hinder
+        their coming to Jesus. We will be discussing and workshopping what it might look like to create an
+        environment where hindrances to kids coming to Jesus can be removed, so they can more fully
+        participate, hear the good news, and respond to it as our ministries point them to Jesus Christ?
+
+- slot: "1:40"
+  seminars:
+    - title: Discipling Students
+      short: Discipling Student Leaders
+      who: Tim
+      speakers:
+        - Tim Malone - Cornerstone Presbyterian Church, Landenberg, PA
+      location: Youth Room
+      description: >-
+        We know Jesus calls us to make disciples, and we want to see our students become lifelong followers of
+        Christ. But what does intentional discipleship actually look like in student ministry? Who do we invest in?
+        What are we aiming for? And how do we help students move from being discipled to discipling others?
+        This practical workshop will give you a clear vision and useful tools for developing student leaders who
+        are growing in Christ, serving others, and learning to make disciples themselves.
+
+    - title: "Help! My Student is Dating Her Chatbot: Cultivating Virtues of Resilience in the Age of AI"
+      short: Help! My Student is Dating Her Chatbot
+      who: Josh
+      speakers:
+        - Josh Fikkert - Covenant Presbyterian Church, St. Louis, MO
+      location: Banquet Room
+      description: >-
+        Since ChatGPT brought AI into the mainstream in 2022, our world has forever changed. In this breakout,
+        we’ll explore how this technology actually works, how this technology shapes students (and ourselves),
+        and how youth ministries can help students cultivate virtues of resilience against the most spiritually
+        corrosive effects of our AI age.
+
+    - title: Ministering to our Kids While in Ministry
+      who: Katie
+      speakers:
+        - Katie Polski - Trinity Church Kirkwood, Kirkwood, MO
+      location: Mosaic Room
+      description: >-
+        Ministry leaders often speak about the tension between church life and home life. But does it have to be
+        a constant tug-of-war? Is it possible for these two sacred callings to strengthen rather than compete with
+        each other? Join us for an honest and hope-filled conversation about both the blessings and the
+        challenges of raising children while serving in ministry. Through personal stories from a former pastor’s
+        kid who is now serving in church leadership, you’ll gain insight into what helps, and what hurts, when
+        ministry and family collide. You’ll leave with seven practical, actionable strategies to help your ministry
+        and home life thrive together instead of pulling apart.
+
+    - title: "Growing Together: Youth Ministry in an Intergenerational Church"
+      short: Growing Together
+      who: TUTW - Heather
+      speakers:
+        - Heather Dirkse - Teach Us to Worship (TUTW)
+      location: Northwest Conference Room
+      short_location: NW Conference Room
+      description: >-
+        How can youth ministry help students find their place in the life of the whole church? In this seminar, we’ll
+        explore the importance of intergenerational worship and relationships in the spiritual formation of young
+        people. We’ll look at practical ways to create meaningful connections between students and other
+        generations through worship, relationships, service, and the shared rhythms of life in the church.
+        Together, we’ll consider how to help students not simply attend church and youth group, but know that
+        they are a vital part of the body of Christ.

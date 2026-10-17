@@ -1,1 +1,1 @@
-<div class="print-only print-logo">{{ partial "logo.html" . }}</div>
+{{ partial "print-logo.html" (.Get 0 | default "conference") }}

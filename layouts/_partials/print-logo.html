@@ -1,0 +1,3 @@
+<div class="print-only print-logo{{ if eq . "cdm" }} print-logo-cdm{{ end }}">
+  {{- if eq . "cdm" }}<img src="{{ "assets/cdm-nextgen.svg" | relURL }}" alt="CDM NextGen Student Ministry">{{ else }}{{ partial "logo.html" . }}{{ end -}}
+</div>
