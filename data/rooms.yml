@@ -1,0 +1,15 @@
+# Room names (as written in schedule/seminar data) -> room id on the map (layouts/_shortcodes/map.html)
+Banquet Room: banquet
+Clubhouse: clubhouse
+Coffee Shop: coffee-shop
+Fellowship Hall: fellowship-hall
+Game Room: game-room
+Gym: gym
+Hybrid Conference Room: hybrid-conference
+Kid’s Club: kids-club
+Kitchen: kitchen
+Mosaic Room: mosaic
+Northwest Conference Room: northwest-conference
+NW Conference Room: northwest-conference
+Offices: offices
+Youth Room: youth-room

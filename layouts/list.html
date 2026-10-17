@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ if .Site.Params.ga4 }}
+    {{ partial "ga4.html" . }}
+    {{ end }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="shortcut icon" href="{{ strings.TrimPrefix "/" .Site.Params.favicon | relURL }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+</head>
+
+<body>
+    <div class="container is-full-screen">
+        <header>
+            <div class="top is-center is-vertical-align">
+                <a class="site-logo" href="{{ .Site.Home.RelPermalink }}">{{ partial "logo.html" . }}</a>
+                <h3 class="text-center">{{ .Title }}</h3>
+            </div>
+        </header>
+
+        <main>
+            {{ .Content }}
+            {{ range .Pages }}
+            <div class="row">
+                <div class="col is-center">
+                    <a class="button outline secondary" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </div>
+            </div>
+            {{ end }}
+        </main>
+
+        <p class="text-center"><a href="{{ .Site.Home.RelPermalink }}">&larr; Back</a></p>
+    </div>
+    <script src="{{ "script.js" | relURL }}"></script>
+</body>
+
+</html>

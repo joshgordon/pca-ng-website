@@ -1,0 +1,7 @@
+{{- /* A room name, linked to its spot on the map when data/rooms.yml knows it */ -}}
+{{- $name := . -}}
+{{- with index site.Data.rooms $name -}}
+<a class="room-link" href="{{ printf "map/#%s" . | relURL }}">{{ $name }}</a>
+{{- else -}}
+{{ $name }}
+{{- end -}}

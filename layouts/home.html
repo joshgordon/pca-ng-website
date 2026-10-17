@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ if .Site.Params.ga4 }} {{ partial "ga4.html" . }} {{ end }}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {{ if .Site.Params.tagline }}{{ .Site.Params.tagline }} - {{ end }}{{
+      .Site.Title }}
+    </title>
+    <link
+      rel="shortcut icon"
+      href="{{ strings.TrimPrefix "/" .Site.Params.favicon | relURL }}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{{ "style.css" | relURL }}" />
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:locale" content="{{ .Site.Params.locale }}" />
+    {{ with .Site.Params.image }}
+    <meta property="og:image" content="{{ $.Site.BaseURL }}/{{ .path }}" />
+    <meta property="og:image:type" content="image/{{ .type }}" />
+    <meta property="og:image:width" content="{{ .width }}" />
+    <meta property="og:image:height" content="{{ .height }}" />
+    <meta property="og:image:alt" content="{{ .alt }}" />
+    {{ end }} {{ with .Site.Params.twitter }}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ .username }}" />
+    <meta name="twitter:title" content="{{ $.Site.Title }}" />
+    <meta
+      name="twitter:description"
+      content="{{ $.Site.Params.description }}"
+    />
+    {{ with $.Site.Params.image }}
+    <meta name="twitter:image" content="{{ $.Site.BaseURL }}/{{ .path }}" />
+    {{ end }} {{ end }}
+  </head>
+
+  <body>
+    <div class="container is-full-screen">
+      <header>
+        <div class="top is-center is-vertical-align">
+          {{ partial "logo.html" . }}
+          <h3 class="text-center">
+            {{ .Site.Title }}{{ if .Site.Params.badge.enable }}<span
+              class="iconify-inline badge"
+              data-icon="{{ .Site.Params.badge.icon }}"
+              style="color: {{ .Site.Params.badge.color }}"
+            ></span
+            >{{ end }}
+          </h3>
+          <p class="text-center">{{ .Site.Params.description }}</p>
+        </div>
+      </header>
+
+      <!-- Dark / Light Mode Switch -->
+      <!--{{ partial "theme-switch.html" . }}-->
+
+      <!-- Social Media Links -->
+      <!--{{ partial "social.html" . }}-->
+
+      <!-- Insta/TikTok/YouTube Link-in-bio -->
+      <!--{{ partial "bio.html" . }}-->
+
+      <!-- Link Buttons -->
+      {{ partial "links.html" . }}
+
+      <!--{{ partial "footer.html" . }}-->
+    </div>
+    <script src="{{ "script.js" | relURL }}"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "PCA NextGen Conference 2026"
+
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+  description = "Important links and info for PCA's NextGen conference"
+  favicon = "/assets/favicon.svg"
+  locale = "en_US"
+  tagline = ""
+  # ga4 = "G-XXXXXXX"
+
+  [params.badge]
+    enable = false
+    icon = "ri:verified-badge-fill"
+    color = "#dfb221"
+# Allow HTML in Markdown (needed for shortcodes like {{< place >}} inside {{< column >}})
+[markup.goldmark.renderer]
+  unsafe = true
+[minify]
+minifyOutput = true

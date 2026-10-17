@@ -1,0 +1,71 @@
+# `seminars` pulls the session list for that slot from data/seminars.yml
+# `sessions` lists other indented rows (name + optional location)
+- day: Monday, October 19
+  events:
+    - name: Certification Final Presentations
+      time: 2:00 PM
+      location: Mosaic Room
+      note: Required for 25-26 Certification Cohort; Everyone welcome.
+    - name: Conference Check-in
+      time: 4:00 PM
+      location: Youth Room
+    - name: Welcome Session
+      time: 4:30 PM
+      location: Fellowship Hall
+    - name: Dinner
+      time: 6:00 PM
+      location: Banquet Room
+    - name: Large Group - Session 1
+      time: 7:00 PM
+      location: Fellowship Hall
+    - name: Late night hangout
+      time: 8:30 PM
+      location: Brick House Tavern
+
+- day: Tuesday, October 20
+  events:
+    - name: Coffee and Hangout
+      time: 9:00 AM
+      location: Youth Room
+    - name: Large Group - Session 2
+      time: 9:30 AM
+      location: Fellowship Hall
+    - name: Breakout Seminars
+      time: 10:45 AM
+      seminars: "10:45"
+    - name: Breakout Seminars
+      time: 11:50 AM
+      seminars: "11:50"
+    - name: Lunch
+      time: 12:30 PM
+      location: Banquet Room
+    - name: Breakout Seminars
+      time: 1:40 PM
+      seminars: "1:40"
+    - name: Free time / Dinner on your own
+      time: 2:45-6:30 PM
+      sessions:
+        - name: "Optional: PACT Ministries - One-on-One Sessions"
+          location: TBA
+        - name: "Optional: SeeJesus Ministries - “Come and See” Event"
+          location: Youth Room
+    - name: Large Group - Session 3
+      time: 7:00 PM
+      location: Fellowship Hall
+    - name: Late Night Hangout
+      time: 8:30 PM
+      location: Narwhal’s Crafted
+
+- day: Wednesday, October 21
+  events:
+    - name: Coffee and Hangout
+      time: 9:00 AM
+      location: Youth Room
+    - name: Panel Q&A
+      time: 9:30 AM
+      location: Fellowship Hall
+    - name: Large Group - Session 4
+      time: 10:30 AM
+      location: Fellowship Hall
+    - name: Head Home
+      time: 11:30 AM
