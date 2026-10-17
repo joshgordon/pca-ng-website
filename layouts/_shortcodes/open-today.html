@@ -1,0 +1,18 @@
+<script>
+  const days = [
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+  ];
+  const dow = new Date().getDay();
+  for (let ii = 0; ii < days.length; ii++) {
+    if (ii >= dow) {
+      const el = document.getElementById(days[ii]);
+      if (el) el.open = true;
+    }
+  }
+</script>

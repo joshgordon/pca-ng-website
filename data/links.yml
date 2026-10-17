@@ -8,19 +8,19 @@
       url: https://photos.app.goo.gl/SCyqKV5RPWRSdWhY9
       icon: fa:photo
     - title: Schedule
-      url: /assets/schedule.pdf
+      url: /schedule/
       icon: akar-icons:schedule
     - title: Breakout Seminar Options
-      url: /assets/Breakout%20Seminar%20Options.pdf
+      url: /seminars/
       icon: guidance:conference-room
     # - title: Freetime Options
-    #   url: /assets/Freetime%20Options.pdf
+    #   url: /free-time/
     #   icon: mdi:location
     # - title: Dining Options
-    #   url: /assets/Dining%20Options.pdf
+    #   url: /dining/
     #   icon: mdi:silverware-fork-knife
     - title: Conference Map
-      url: /assets/Nextgen%20Conference%20Map.pdf
+      url: /map/
       icon: mdi:map
     - title: Chapelgate Presbyterian Church
       url: https://maps.app.goo.gl/wckfFyJNvALomsKF9
@@ -29,6 +29,6 @@
     #   url: https://maps.app.goo.gl/GJxjGgyNAFiK3xUEA
     #   icon: mdi:map-marker
     # - title: PCA Bookstore Discount Code
-    #   url: /bookstore.html
+    #   url: /bookstore/
     #   icon: fa-solid:book
     #   # tag: New!

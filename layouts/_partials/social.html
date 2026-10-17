@@ -1,0 +1,11 @@
+{{ if .Site.Data.social }}
+<nav class="nav">
+    <div class="nav-center">
+    {{ range .Site.Data.social }}
+    <a class="brand" href="{{ .url }}" target="_blank" aria-label="{{ .name }}" {{ if eq .name "mastodon" }}rel="me"{{ end }}>
+        <span class="iconify-inline" data-icon="{{ .icon }}" style="color: {{ .color }}"></span>
+    </a>
+    {{ end }}
+    </div>
+</nav>
+{{ end }}

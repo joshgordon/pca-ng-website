@@ -1,0 +1,25 @@
+{{ $seminarsURL := "seminars/" | relURL }}
+{{ range site.Data.schedule }}
+<h2 class="day">{{ .day }}</h2>
+<div class="sched">
+  {{ range .events }}
+  <div class="sched-row event">
+    <span class="name"><span>{{ .name }}</span></span>
+    <span class="time">{{ .time }}</span>
+    <span class="loc">{{ .location }}</span>
+  </div>
+  {{ with .note }}<div class="sched-row note">{{ . }}</div>{{ end }}
+  {{ with .seminars }}
+  {{ $slot := . }}
+  {{ range where site.Data.seminars "slot" $slot }}
+  {{ range .seminars }}
+  <div class="sched-row session">
+    <a class="name" href="{{ $seminarsURL }}#{{ .title | anchorize }}">“{{ .short | default .title }}”</a>
+    <span class="loc">{{ strings.TrimPrefix "The " .location }}</span>
+  </div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}

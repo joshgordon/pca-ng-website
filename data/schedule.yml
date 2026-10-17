@@ -1,0 +1,65 @@
+# `seminars` pulls the session list for that slot from data/seminars.yml
+- day: Monday, October 20
+  events:
+    - name: Certification Final Presentations
+      time: 2:00 PM
+      location: Youth Room
+      note: Required for 24-25 Certification Cohort; Everyone welcome.
+    - name: Conference Check-in
+      time: 4:00 PM
+      location: Lobby
+    - name: Welcome Session
+      time: 4:30 PM
+      location: Chapel
+    - name: Dinner
+      time: 6:00 PM
+      location: Fellowship Hall
+    - name: Large Group - Session 1
+      time: 7:00 PM
+      location: Chapel
+    - name: "Late night hangout: Dessert and Bonfire"
+      time: 8:30 PM
+      location: Youth Cafe and Fire Pit
+
+- day: Tuesday, October 21
+  events:
+    - name: Coffee and Hangout
+      time: 9:00 AM
+      location: Chapel
+    - name: Large Group - Session 2
+      time: 9:30 AM
+      location: Chapel
+    - name: Breakout Seminars
+      time: 10:30 AM
+      seminars: "10:30"
+    - name: Breakout Seminars
+      time: 11:30 AM
+      seminars: "11:30"
+    - name: Lunch
+      time: 12:30 PM
+      location: Fellowship Hall
+    - name: Breakout Seminars
+      time: 1:30 PM
+      seminars: "1:30"
+    - name: Free time / Dinner on your own
+      time: 2:30 PM
+    - name: Large Group - Session 3
+      time: 7:00 PM
+      location: Chapel
+    - name: Late Night Hangout at Oscar’s Alehouse
+      time: 8:30 PM
+      location: Oscar’s Alehouse
+
+- day: Wednesday, October 22
+  events:
+    - name: Coffee and Hangout
+      time: 9:00 AM
+      location: Chapel
+    - name: Panel Q&A
+      time: 9:30 AM
+      location: Chapel
+    - name: Large Group - Session 4
+      time: 10:30 AM
+      location: Chapel
+    - name: Head Home
+      time: 11:30 AM

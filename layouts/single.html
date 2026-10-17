@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ if .Site.Params.ga4 }}
+    {{ partial "ga4.html" . }}
+    {{ end }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="shortcut icon" href="{{ strings.TrimPrefix "/" .Site.Params.favicon | relURL }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+</head>
+
+<body{{ with .Params.class }} class="{{ . }}"{{ end }}>
+    <div class="container is-full-screen">
+        <header>
+            <div class="top is-center is-vertical-align">
+                {{ if ne .Params.print_logo false }}<div class="print-only print-logo">{{ partial "logo.html" . }}</div>{{ end }}
+                <a class="site-logo" href="{{ .Site.Home.RelPermalink }}">{{ partial "logo-small.html" . }}</a>
+                <h3 class="text-center{{ if eq .Params.print_title false }} screen-only{{ end }}">{{ .Title }}</h3>
+                {{ with .Params.subtitle }}<p class="text-center subtitle">{{ . }}</p>{{ end }}
+                {{ with .Params.author }}<h4 class="text-center">{{ . }}</h4>{{ end }}
+            </div>
+        </header>
+
+        <main class="row">
+            <div class="col page-content">
+                {{ .Content }}
+                <p class="text-center back"><a href="{{ .Site.Home.RelPermalink }}">&larr; Back</a></p>
+            </div>
+        </main>
+    </div>
+    <script src="{{ "script.js" | relURL }}"></script>
+</body>
+
+</html>

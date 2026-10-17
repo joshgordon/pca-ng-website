@@ -1,0 +1,11 @@
+{{ range site.Data.seminars }}
+<h2 class="slot">{{ .slot }} Options</h2>
+{{ range .seminars }}
+<section class="seminar" id="{{ .title | anchorize }}">
+  <h3>{{ .title }}</h3>
+  {{ range .speakers }}<div class="speaker">{{ . }}</div>{{ end }}
+  <p>{{ .description }}</p>
+  <div class="location">Location: {{ .location }}</div>
+</section>
+{{ end }}
+{{ end }}

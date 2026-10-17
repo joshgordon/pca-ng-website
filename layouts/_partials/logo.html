@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    {% if site.ga4 %}
-    {% include ga4.html %}
-    {% endif %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.name }}</title>
-    <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:title" content="{{ site.name }}" />
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:locale" content="{{ site.locale }}" />
-    <meta property="og:image" content="{{ site.url }}/{{ site.image.path }}" />
-    <meta property="og:image:type" content="image/{{ site.image.type }}" />
-    <meta property="og:image:width" content="{{ site.image.width }}">
-    <meta property="og:image:height" content="{{ site.image.height }}">
-    <meta property="og:image:alt" content="{{ site.image.alt }}">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@{{ site.twitter.username }}" />
-    <meta name="twitter:title" content="{{ site.name }}" />
-    <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.image.path }}" />
-</head>
-
-<body>
-    <div class="container is-full-screen">
-        <header>
-            <div class="top is-center is-vertical-align">
 		<svg width="100%" height="100%" viewBox="0 0 1341 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 		    <g id="Student-Ministry-Conference-Logo" serif:id="Student Ministry Conference Logo" transform="matrix(0.969187,0,0,0.835107,-936.56,-2192.52)">
 			<rect x="966.336" y="2625.43" width="1383.17" height="343.368" style="fill:none;"/>
@@ -84,28 +49,3 @@
 			</g>
 		    </g>
 		</svg>
-
-                <h3 class="text-center">{{ site.name }}{% if site.badge.enable == true %}<span class="iconify-inline badge"
-                        data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>{% endif %}</h3>
-                <p class="text-center">{{ site.description }}</p>
-            </div>
-        </header>
-
-        <!-- Dark / Light Mode Switch -->
-	    <!-- {% include theme-switch.html %} -->
-
-        <!-- Social Media Links -->
-	<!--{% include social.html %}-->
-
-        <!-- Insta/TikTok/YouTube Link-in-bio -->
-	<!--{% include bio.html %}-->
-
-        <!-- Link Buttons -->
-        {% include links.html %}
-
-	<!--{% include footer.html %}-->
-    </div>
-    <script src="/assets/script.js"></script>
-</body>
-
-</html>

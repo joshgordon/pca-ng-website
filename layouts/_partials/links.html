@@ -1,0 +1,24 @@
+<main>
+    {{ range .Site.Data.links }}
+    <h5 class="text-center">{{ .category }}</h5>
+    {{ if .description }}
+        <div class="is-center"><div>{{ .description | markdownify }}</div></div>
+    {{ end }}
+    {{ range .items }}
+    <div class="row">
+        {{ if .tag }}
+        <div class="col link is-center">
+        {{ else }}
+        <div class="col is-center">
+        {{ end }}
+        {{ if .url }}<a class="button outline secondary" {{ if findRE "^https?://" .url }}href="{{ .url }}" target="_blank"{{ else }}href="{{ strings.TrimPrefix "/" .url | relURL }}"{{ end }}>{{ else }}<span class="button outline secondary">{{ end }}{{ if .icon }}<span
+                    class="iconify-inline" data-icon="{{ .icon | safeURL }}"></span>{{ end }}{{ if (index . "custom-icon") }}<span class="custom-icon">{{ index . "custom-icon" | safeHTML }}</span>{{ end }}{{ .title }}
+                {{ if .tag }}<span class="tag is-small bd-success text-success">{{ .tag }}</span>{{ end }}{{ if .url }}</a>{{ else }}</span>{{ end }}
+        </div>
+    </div>
+    {{ end }}
+    {{ if .enddescription }}
+        <div class="is-center"><div>{{ .enddescription | markdownify }}</div></div>
+    {{ end }}
+    {{ end }}
+</main>

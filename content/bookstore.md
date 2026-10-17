@@ -1,8 +1,6 @@
 ---
-layout: page
+title: PCA Bookstore Information
 ---
-
-# PCA Bookstore Information
 
 Use the code **NxtGen2024** at the [PCA
 Bookstore](https://www.pcabookstore.com/) to receive free shipping on USPS Media
