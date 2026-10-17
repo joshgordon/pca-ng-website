@@ -3,8 +3,6 @@ languageCode = "en-us"
 title = "PCA NextGen Conference 2026"
 
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
-# Build into _site, the output directory Cloudflare Pages already uses
-publishDir = "_site"
 
 [params]
   description = "Important links and info for PCA's NextGen conference"
