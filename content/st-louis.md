@@ -2,7 +2,6 @@
 title: Things to Do, Coffee Shops & Restaurants
 params:
   class: st-louis
-  print_logo: cdm
 ---
 
 {{< columns >}}

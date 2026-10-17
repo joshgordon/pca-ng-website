@@ -416,7 +416,6 @@ footer {
   max-width: 480px;
   height: auto;
   margin: 0 auto;
-  fill: var(--font-color);
 }
 .subtitle {
   font-weight: 700;
@@ -706,7 +705,6 @@ a.room-link,
     display: block;
   }
   .screen-only,
-  .site-logo,
   .back,
   #theme-switch {
     display: none !important;
@@ -734,7 +732,9 @@ a.room-link,
     line-height: 1.25;
   }
   a,
-  a.addr {
+  a.addr,
+  a.room-link,
+  .map-legend a {
     color: inherit;
     text-decoration: none;
   }
@@ -749,6 +749,7 @@ a.room-link,
   .print-logo svg {
     display: block;
     width: 100%;
+    max-width: none;
     height: auto;
   }
   header h3 {

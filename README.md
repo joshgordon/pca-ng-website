@@ -63,7 +63,7 @@ Page front matter options (under `params:`):
 
 - `class` — added to `<body>` for page-specific styles
 - `subtitle` — line under the title
-- `print_logo` — logo printed above the title: `conference` (default), `cdm`, or `false` for none
+- `print_logo` — logo printed above the title: `conference` (default, the same logo shown on screen), `cdm`, or `false` for none
 - `print_title: false` — hide the title when printed
 
 Shortcodes available in pages:

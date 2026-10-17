@@ -18,9 +18,11 @@
     <div class="container is-full-screen">
         <header>
             <div class="top is-center is-vertical-align">
+                {{/* the conference logo prints as-is; print_logo swaps in another logo or (false) none */}}
                 {{ $logo := .Params.print_logo | default "conference" }}
-                {{ if ne .Params.print_logo false }}{{ partial "print-logo.html" $logo }}{{ end }}
-                <a class="site-logo" href="{{ .Site.Home.RelPermalink }}">{{ partial "logo-small.html" . }}</a>
+                {{ if eq .Params.print_logo false }}{{ $logo = false }}{{ end }}
+                {{ if and $logo (ne $logo "conference") }}{{ partial "print-logo.html" $logo }}{{ end }}
+                <a class="site-logo{{ if eq $logo "conference" }} print-logo{{ else }} screen-only{{ end }}" href="{{ .Site.Home.RelPermalink }}">{{ partial "logo.html" . }}</a>
                 <h3 class="text-center{{ if eq .Params.print_title false }} screen-only{{ end }}">{{ .Title }}</h3>
                 {{ with .Params.subtitle }}<p class="text-center subtitle">{{ . }}</p>{{ end }}
                 {{ with .Params.author }}<h4 class="text-center">{{ . }}</h4>{{ end }}
