@@ -15,5 +15,8 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
     enable = false
     icon = "ri:verified-badge-fill"
     color = "#dfb221"
+# Allow HTML in Markdown (needed for shortcodes like {{< place >}} inside {{< column >}})
+[markup.goldmark.renderer]
+  unsafe = true
 [minify]
 minifyOutput = true

@@ -5,6 +5,8 @@ params:
   print_logo: cdm
 ---
 
+{{< columns >}}
+{{< column >}}
 ## Things to Do in St. Louis
 
 ### 25–35 min drive
@@ -29,7 +31,8 @@ params:
 - {{< place "Kirkwood Downtown" "Downtown Kirkwood, MO" >}}
 - {{< place "The Chesterfield Valley" "Chesterfield Valley, Chesterfield, MO" >}} (shopping, 2 outlet malls, restaurants, Top Golf, etc.)
 - Disc Golf: {{< place "Logan College Course" "Logan University disc golf course, Chesterfield, MO" >}}, {{< place "Bluebird Course" "Bluebird Park disc golf, Ellisville, MO" >}}, {{< place "Creve Coeur Course" "Creve Coeur Park disc golf, MO" >}}, several others further away
-
+{{< /column >}}
+{{< column >}}
 ## Coffee Shops
 
 ### Local nearby coffee shops & pastries
@@ -66,3 +69,5 @@ params:
 - {{< place "Corner 17" >}} (Chinese)
 - {{< place "Mai Lee" >}} (Vietnamese)
 - {{< place "Twisted Ranch" >}}
+{{< /column >}}
+{{< /columns >}}

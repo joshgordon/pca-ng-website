@@ -72,6 +72,8 @@ Shortcodes available in pages:
 - `{{< place "Name" >}}` — place name that links to a Google Maps search (`"Name, St. Louis, MO"`
   unless a second argument gives the search)
 - `{{< legend >}}…{{< /legend >}}` — Markdown laid out in columns (map room legend)
+- `{{< columns >}}{{< column >}}…{{< /column >}}{{< column >}}…{{< /column >}}{{< /columns >}}` —
+  side-by-side columns when printed (stacked on screen); each column holds Markdown
 - `{{< print-logo >}}` / `{{< print-logo "cdm" >}}` — logo that only appears when printed
 - `{{< checklist >}}` — renders a list with checkboxes (packing lists)
 - `{{< dontbring >}}` — renders a list with X bullets

@@ -846,18 +846,23 @@ a.room-link,
     height: auto;
   }
 
+  /* sized to fit one sheet in portrait or landscape */
   .st-louis .print-logo {
-    width: 4.6in;
+    width: 3.6in;
+    margin-bottom: 0.08in;
   }
   .st-louis header h3 {
-    font-size: 17pt;
-    margin-bottom: 0.15in;
+    font-size: 16pt;
+    margin-bottom: 0.1in;
   }
   .st-louis .page-content {
-    columns: 2;
-    column-gap: 0.4in;
-    font-size: 11pt;
-    line-height: 1.25;
+    font-size: 10.5pt;
+    line-height: 1.2;
+  }
+  .st-louis .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4in;
   }
   .st-louis .page-content h2 {
     font-size: 14pt;
@@ -865,9 +870,6 @@ a.room-link,
   }
   .st-louis .page-content h2:first-child {
     margin-top: 0;
-  }
-  #coffee-shops {
-    break-before: column;
   }
   .st-louis .page-content h3 {
     font-size: 11pt;
