@@ -1,0 +1,4 @@
+{{- /* External links open in a new tab, like the homepage buttons */ -}}
+{{- $external := findRE "^https?://" .Destination -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ .Text }}</a>
+{{- /**/ -}}

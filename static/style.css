@@ -417,6 +417,43 @@ footer {
   height: auto;
   margin: 0 auto;
 }
+.promo-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 2.4rem auto;
+  padding: 2.4rem 1.6rem;
+  max-width: 36rem;
+  border: 2px dashed var(--nextgen-orange);
+  border-radius: 8px;
+}
+.promo-code code {
+  line-height: 1;
+}
+.promo-expires {
+  margin: -0.9rem 0 0;
+  font-size: 1.4rem;
+  color: var(--color-grey);
+}
+.promo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.promo-buttons .button.primary {
+  color: #fff;
+  background-color: var(--nextgen-orange);
+}
+.promo-code code {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--nextgen-orange);
+  background: none;
+  padding: 0;
+}
 .subtitle {
   font-weight: 700;
   color: var(--nextgen-green);
@@ -683,7 +720,8 @@ a.room-link,
     size: letter landscape;
     margin: 0;
   }
-  body.map {
+  body.map,
+  body.bookstore {
     page: landscape;
   }
   :root,
@@ -903,5 +941,95 @@ a.room-link,
   }
   .map-legend p {
     margin: 0 0 0.15in;
+  }
+}
+
+/* Bookstore page prints as a sheet of cut-out coupons */
+@media print {
+  /* narrow margins: the outer cut lines can sit in the printer's dead zone */
+  body.bookstore .container {
+    padding: 0.25in;
+  }
+  .bookstore header {
+    display: none;
+  }
+  .bookstore .page-content > :not(.coupon-sheet) {
+    display: none !important;
+  }
+  .coupon-sheet {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 3.98in;
+  }
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1in;
+    padding: 0.15in 0.35in;
+    text-align: center;
+    color: var(--nextgen-navy);
+    break-inside: avoid;
+  }
+  .coupon p {
+    margin: 0;
+  }
+  .coupon-logo {
+    width: 3.3in;
+  }
+  .coupon-store {
+    font-size: 13pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .coupon code {
+    font-size: 36pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    color: var(--nextgen-orange);
+    background: none;
+    padding: 0.08in 0.25in;
+    border: 2px dashed var(--nextgen-orange);
+    border-radius: 6px;
+  }
+  .coupon-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.25in;
+    margin-top: 0.04in;
+    text-align: left;
+  }
+  .coupon-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.08in;
+  }
+  .coupon-perks {
+    font-size: 11.5pt;
+    line-height: 1.25;
+  }
+  .coupon-url {
+    font-size: 13pt;
+    font-weight: 700;
+  }
+  .coupon-fine {
+    font-size: 10.5pt;
+  }
+  .coupon-qr {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.03in;
+    font-size: 9.5pt;
+    font-weight: 700;
+  }
+  .coupon-qr img {
+    width: 1.55in;
+    image-rendering: pixelated;
   }
 }

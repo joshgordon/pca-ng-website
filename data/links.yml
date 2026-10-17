@@ -22,7 +22,6 @@
     - title: The Commons
       url: https://maps.app.goo.gl/UHPih9Qcd9dKgdpbA
       icon: mdi:map-marker-star-outline
-    # - title: PCA Bookstore Discount Code
-    #   url: /bookstore/
-    #   icon: fa-solid:book
-    #   # tag: New!
+    - title: PCA Bookstore Discount Code
+      url: /bookstore/
+      icon: fa-solid:book

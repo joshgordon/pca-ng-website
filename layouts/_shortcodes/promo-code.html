@@ -1,0 +1,34 @@
+{{/* A discount code with a copy button:
+     {{< promo-code code="CODE" url="https://store.example/" expires="2026-10-30" store="Store name" perks="What the code gets you" >}}
+     url adds a button that copies the code and opens the store in a new tab.
+     When printed, the page becomes a sheet of cut-out coupons. */}}
+{{ $code := .Get "code" }}
+{{ $url := .Get "url" }}
+{{ $expires := "" }}{{ with .Get "expires" }}{{ $expires = time.Format "January 2, 2006" . }}{{ end }}
+{{ $copy := printf "navigator.clipboard.writeText('%s')" $code }}
+<div class="promo-code screen-only">
+  <code>{{ $code }}</code>
+  {{ with $expires }}<p class="promo-expires">Expires {{ . }}</p>{{ end }}
+  <div class="promo-buttons">
+    {{ with $url }}<a class="button primary" href="{{ . }}" target="_blank" rel="noopener" onclick="{{ $copy | safeJS }}">Copy code &amp; open bookstore</a>{{ end }}
+    <button type="button" class="button outline secondary" onclick="{{ $copy | safeJS }}.then(() => { this.textContent = 'Copied!'; setTimeout(() => this.textContent = 'Copy code', 2000) })">Copy code</button>
+  </div>
+</div>
+{{ $qr := "" }}{{ with $url }}{{ $qr = images.QR . (dict "level" "medium" "scale" 6 "targetDir" "assets") }}{{ end }}
+<div class="coupon-sheet print-only">
+  {{ range seq 4 }}
+  <div class="coupon">
+    <img class="coupon-logo" src="{{ "assets/conference-logo.svg" | relURL }}" alt="NextGen Student Ministry Conference">
+    {{ with $.Get "store" }}<p class="coupon-store">{{ . }}</p>{{ end }}
+    <code>{{ $code }}</code>
+    <div class="coupon-bottom">
+      <div class="coupon-details">
+        {{ with $.Get "perks" }}<p class="coupon-perks">{{ . }}</p>{{ end }}
+        {{ with $url }}<p class="coupon-url">{{ strings.TrimSuffix "/" (replaceRE "^https?://(www\\.)?" "" .) }}</p>{{ end }}
+        {{ with $expires }}<p class="coupon-fine">Expires {{ . }}</p>{{ end }}
+      </div>
+      {{ with $qr }}<div class="coupon-qr"><img src="{{ .RelPermalink }}" alt="QR code for the store"><span>Scan to shop</span></div>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
