@@ -19,10 +19,9 @@
     - title: Things to Do, Coffee & Restaurants
       url: /st-louis/
       icon: mdi:silverware-fork-knife
-    # TODO: Google Maps link for The Commons
-    # - title: The Commons
-    #   url:
-    #   icon: mdi:map-marker-star-outline
+    - title: The Commons
+      url: https://maps.app.goo.gl/UHPih9Qcd9dKgdpbA
+      icon: mdi:map-marker-star-outline
     # - title: PCA Bookstore Discount Code
     #   url: /bookstore/
     #   icon: fa-solid:book

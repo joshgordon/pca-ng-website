@@ -4,8 +4,9 @@ A Hugo link-in-bio site with links and info for PCA's NextGen conference, served
 https://pca-ng.org by Cloudflare Pages. Pushing `main` deploys production; every other branch
 gets a preview URL.
 
-Cloudflare Pages build settings: build command `hugo`, output directory `public`, and the
-environment variable `HUGO_VERSION` set to a recent Hugo (0.146 or newer; built with 0.167.0).
+Cloudflare Pages build settings: build command `hugo`, output directory `_site` (set by
+`publishDir` in `hugo.toml`), and the environment variable `HUGO_VERSION` set to a recent Hugo
+(0.146 or newer; built with 0.167.0).
 
 ## Local development
 
