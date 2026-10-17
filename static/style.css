@@ -431,6 +431,17 @@ footer {
 .promo-code code {
   line-height: 1;
 }
+.cdm-logo {
+  --cdm-navy: #233650;
+  width: 10rem;
+  margin: 3.2rem auto;
+}
+.dark .cdm-logo {
+  --cdm-navy: #37558d;
+}
+.cdm-logo svg {
+  display: block;
+}
 .promo-expires {
   margin: -0.9rem 0 0;
   font-size: 1.4rem;

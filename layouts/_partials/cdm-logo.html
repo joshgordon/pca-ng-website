@@ -1,0 +1,4 @@
+{{/* The CDM logo on screen, inlined so the navy can lighten in dark mode like the site logo */}}
+<div class="cdm-logo screen-only" role="img" aria-label="CDM">
+  {{- readFile "static/assets/cdm.svg" | replaceRE `(?s)^.*?(<svg)` "$1" | replaceRE `#243551` "var(--cdm-navy)" | safeHTML -}}
+</div>
