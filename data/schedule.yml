@@ -21,6 +21,7 @@
     - name: Late night hangout
       time: 8:30 PM
       location: Brick House Tavern
+      location_url: https://maps.app.goo.gl/peVZGSBppxzPoiWx7
 
 - day: Tuesday, October 20
   events:
@@ -55,6 +56,7 @@
     - name: Late Night Hangout
       time: 8:30 PM
       location: Narwhal’s Crafted
+      location_url: https://maps.app.goo.gl/vYDrxaAGkrQZkeM36
 
 - day: Wednesday, October 21
   events:
