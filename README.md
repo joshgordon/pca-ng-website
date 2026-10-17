@@ -1,6 +1,11 @@
 # PCA NextGen Conference
 
-A Hugo link-in-bio site with links and info for PCA's NextGen conference. Deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main`.
+A Hugo link-in-bio site with links and info for PCA's NextGen conference, served at
+https://pca-ng.org by Cloudflare Pages. Pushing `main` deploys production; every other branch
+gets a preview URL.
+
+Cloudflare Pages build settings: build command `hugo`, output directory `public`, and the
+environment variable `HUGO_VERSION` set to a recent Hugo (0.146 or newer; built with 0.167.0).
 
 ## Local development
 
