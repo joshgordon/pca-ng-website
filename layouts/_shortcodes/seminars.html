@@ -5,7 +5,7 @@
   <h3>{{ .title }}</h3>
   {{ range .speakers }}<div class="speaker">{{ . }}</div>{{ end }}
   <p>{{ .description }}</p>
-  <div class="location">Location: {{ .location }}</div>
+  <div class="location">Location: {{ partial "room-link.html" .location }}</div>
 </section>
 {{ end }}
 {{ end }}

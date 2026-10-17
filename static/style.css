@@ -592,6 +592,37 @@ a.addr {
   stroke: #333;
   stroke-width: 3;
 }
+.c-hall-area {
+  fill: transparent;
+}
+.room:target .c-room,
+.room:target .c-hall-area {
+  fill: var(--nextgen-orange);
+  animation: room-pulse 1.2s ease-in-out 3;
+}
+.room:target .c-hall-area {
+  fill-opacity: 0.35;
+}
+.room:target .c-label rect {
+  stroke: var(--nextgen-orange);
+  stroke-width: 4;
+}
+@keyframes room-pulse {
+  50% {
+    fill-opacity: 0.5;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .room:target .c-room,
+  .room:target .c-hall-area {
+    animation: none;
+  }
+}
+a.room-link,
+.map-legend a {
+  color: inherit;
+  text-decoration: underline dotted;
+}
 @media screen {
   .dark .map-scroll svg {
     background: transparent;

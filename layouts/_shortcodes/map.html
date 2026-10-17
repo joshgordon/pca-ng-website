@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
+{{/* Each room is a <g id="…"> so /map/#banquet highlights it; ids are listed in data/rooms.yml */}}
 <div class="commons-map">
   <div class="map-scroll">
   <svg viewBox="40 50 1880 1010" role="img" aria-label="Floor plan of The Commons">
@@ -13,6 +14,12 @@
       </symbol>
     </defs>
 
+    <!-- open floor, highlightable as a room -->
+    <g id="fellowship-hall" class="room">
+      <polygon points="485,187 1310,187 1310,540 1210,540 1210,630 1260,700 1700,700 1700,758 1555,758 1555,960 1505,985 1090,985 1057,965 1057,885 988,838 948,800 482,800 482,495" class="c-hall-area" />
+      <text x="1112" y="430" class="c-hall">FELLOWSHIP HALL</text>
+    </g>
+
     <!-- The Commons wordmark -->
     <g class="c-mark" stroke-width="13" fill="none">
       <path d="M163 90l60 60M223 90l-60 60" stroke="#2b9fe0" />
@@ -24,28 +31,66 @@
     <path class="c-wall" d="M485 187H650M902 187H1180M1235 187H1310M1887 187V990M1595 990H1887M1090 985H1170M1225 985H1450M1505 985L1565 965M1057 965L1090 985M1778 187H1790" />
 
     <!-- west wing -->
-    <rect x="128" y="187" width="357" height="308" class="c-room" />
-    <path class="c-wall" d="M128 297H215M250 297H485M315 187V297" />
-    <polygon points="128,540 482,540 482,980 350,980 248,1050 128,1050" class="c-room" />
-    <polygon points="482,800 948,800 975,830 945,883 945,980 482,980" class="c-room" />
-    <polygon points="988,838 1057,885 1057,965 1018,1002 975,1002 945,980 945,883" class="c-room" />
-    <rect x="650" y="72" width="252" height="115" class="c-room" />
+    <g id="kitchen" class="room">
+      <rect x="650" y="72" width="252" height="115" class="c-room" />
+      <g class="c-label"><rect x="710" y="120" width="140" height="40" /><text x="780" y="151">Kitchen</text></g>
+    </g>
+    <g id="game-room" class="room">
+      <rect x="128" y="187" width="187" height="110" class="c-room" />
+      <g class="c-label"><rect x="148" y="225" width="142" height="40" /><text x="219" y="256">Game Room</text></g>
+    </g>
+    <g id="northwest-conference" class="room">
+      <rect x="315" y="187" width="170" height="110" class="c-room" />
+      <g class="c-label"><rect x="345" y="207" width="108" height="72" /><text x="399" y="238" class="c-small">Northwest</text><text x="399" y="268" class="c-small">Conference</text></g>
+    </g>
+    <g id="youth-room" class="room">
+      <rect x="128" y="297" width="357" height="198" class="c-room" />
+      <g class="c-label"><rect x="248" y="362" width="140" height="40" /><text x="318" y="393">Youth Room</text></g>
+    </g>
+    <g id="gym" class="room">
+      <polygon points="128,540 482,540 482,980 350,980 248,1050 128,1050" class="c-room" />
+      <g class="c-label"><rect x="236" y="725" width="140" height="46" /><text x="306" y="759">Gym</text></g>
+    </g>
+    <g id="coffee-shop" class="room">
+      <polygon points="482,800 948,800 975,830 945,883 945,980 482,980" class="c-room" />
+      <g class="c-label"><rect x="638" y="880" width="157" height="44" /><text x="716" y="913">Coffee Shop</text></g>
+    </g>
+    <g id="hybrid-conference" class="room">
+      <polygon points="988,838 1057,885 1057,965 1018,1002 975,1002 945,980 945,883" class="c-room" />
+      <g class="c-label"><rect x="948" y="892" width="102" height="70" /><text x="999" y="922" class="c-small">Hybrid</text><text x="999" y="952" class="c-small">Conference</text></g>
+    </g>
 
     <!-- east wing -->
-    <polygon points="1323,187 1778,187 1778,243 1685,243 1685,260 1323,260" class="c-room" />
-    <path class="c-wall" d="M1615 187V260M1685 187V243" />
+    <g id="mosaic" class="room">
+      <rect x="1323" y="187" width="292" height="73" class="c-room" />
+      <g class="c-label"><rect x="1400" y="202" width="142" height="45" /><text x="1471" y="235">Mosaic</text></g>
+    </g>
+    <polygon points="1615,187 1778,187 1778,243 1685,243 1685,260 1615,260" class="c-room" />
+    <path class="c-wall" d="M1685 187V243" />
     <rect x="1818" y="187" width="69" height="168" class="c-room" />
     <path class="c-wall" d="M1818 270H1887" />
-    <polygon points="1310,325 1380,325 1380,403 1445,403 1445,540 1310,540" class="c-room" />
-    <path class="c-wall" d="M1310 362H1380" />
+    <g id="clubhouse" class="room">
+      <polygon points="1310,325 1380,325 1380,403 1445,403 1445,540 1310,540" class="c-room" />
+      <path class="c-wall" d="M1310 362H1380" />
+      <g class="c-label"><rect x="1323" y="445" width="119" height="45" /><text x="1382" y="478">Clubhouse</text></g>
+    </g>
     <polygon points="1432,325 1602,325 1602,540 1445,540 1445,403 1432,403" class="c-room" />
     <rect x="1602" y="325" width="128" height="215" class="c-room" />
     <path class="c-wall" d="M1602 402H1730M1668 402V540M1602 472H1668" />
-    <polygon points="1730,357 1887,357 1887,810 1700,810 1700,700 1770,700 1770,540 1730,540" class="c-room" />
-    <polygon points="1210,540 1770,540 1770,700 1260,700 1210,630" class="c-room" />
-    <polygon points="1555,758 1700,758 1700,810 1887,810 1887,990 1595,990 1555,960" class="c-room" />
+    <g id="offices" class="room">
+      <polygon points="1730,357 1887,357 1887,810 1700,810 1700,700 1770,700 1770,540 1730,540" class="c-room" />
+      <g class="c-label"><rect x="1780" y="570" width="92" height="47" /><text x="1826" y="603">Offices</text></g>
+    </g>
+    <g id="banquet" class="room">
+      <polygon points="1210,540 1770,540 1770,700 1260,700 1210,630" class="c-room" />
+      <g class="c-label"><rect x="1428" y="598" width="124" height="47" /><text x="1490" y="632">Banquet</text></g>
+    </g>
+    <g id="kids-club" class="room">
+      <polygon points="1555,758 1700,758 1700,810 1887,810 1887,990 1595,990 1555,960" class="c-room" />
+      <path class="c-wall" d="M1555 866H1678M1555 918H1678M1678 810V918" />
+      <g class="c-label"><rect x="1720" y="855" width="137" height="47" /><text x="1788" y="889">Kid’s Club</text></g>
+    </g>
     <rect x="1633" y="758" width="67" height="52" fill="#000" />
-    <path class="c-wall" d="M1555 866H1678M1555 918H1678M1678 810V918" />
 
     <!-- restrooms -->
     <rect x="337" y="460" width="63" height="32" class="c-room" />
@@ -69,23 +114,22 @@
       <rect x="1350" y="822" width="24" height="46" rx="8" />
       <path d="M1356 868v24M1368 868v24" />
     </g>
-
-    <!-- labels -->
-    <text x="1112" y="430" class="c-hall">FELLOWSHIP HALL</text>
-    <g class="c-label">
-      <rect x="710" y="120" width="140" height="40" /><text x="780" y="151">Kitchen</text>
-      <rect x="148" y="225" width="142" height="40" /><text x="219" y="256">Game Room</text>
-      <rect x="345" y="207" width="108" height="72" /><text x="399" y="238" class="c-small">Northwest</text><text x="399" y="268" class="c-small">Conference</text>
-      <rect x="248" y="362" width="140" height="40" /><text x="318" y="393">Youth Room</text>
-      <rect x="236" y="725" width="140" height="46" /><text x="306" y="759">Gym</text>
-      <rect x="638" y="880" width="157" height="44" /><text x="716" y="913">Coffee Shop</text>
-      <rect x="948" y="892" width="102" height="70" /><text x="999" y="922" class="c-small">Hybrid</text><text x="999" y="952" class="c-small">Conference</text>
-      <rect x="1400" y="202" width="142" height="45" /><text x="1471" y="235">Mosaic</text>
-      <rect x="1323" y="445" width="119" height="45" /><text x="1382" y="478">Clubhouse</text>
-      <rect x="1428" y="598" width="124" height="47" /><text x="1490" y="632">Banquet</text>
-      <rect x="1780" y="570" width="92" height="47" /><text x="1826" y="603">Offices</text>
-      <rect x="1720" y="855" width="137" height="47" /><text x="1788" y="889">Kid’s Club</text>
-    </g>
   </svg>
   </div>
 </div>
+<script>
+  // Bring a linked room (#banquet etc.) into view, centred inside the scrollable map on phones.
+  (function () {
+    function showRoom() {
+      var id = decodeURIComponent(location.hash.slice(1));
+      var room = id && document.getElementById(id);
+      if (!room || !room.classList.contains("room")) return;
+      var box = document.querySelector(".map-scroll");
+      var r = room.getBoundingClientRect(), b = box.getBoundingClientRect();
+      box.scrollLeft += r.left + r.width / 2 - (b.left + b.width / 2);
+      document.querySelector(".commons-map").scrollIntoView({ block: "center" });
+    }
+    window.addEventListener("hashchange", showRoom);
+    window.addEventListener("load", showRoom);
+  })();
+</script>

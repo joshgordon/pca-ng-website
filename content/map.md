@@ -10,25 +10,25 @@ params:
 
 {{< legend >}}
 **MAIN SESSIONS:**\
-Banquet Room
+[Banquet Room](#banquet)
 
 **GATHERING ROOMS:**\
-Banquet Room\
-Youth Room
+[Banquet Room](#banquet)\
+[Youth Room](#youth-room)
 
 **BREAKOUT ROOMS 1:**\
-Banquet Room\
-Youth Room\
-Mosaic Room
+[Banquet Room](#banquet)\
+[Youth Room](#youth-room)\
+[Mosaic Room](#mosaic)
 
 **BREAKOUT ROOMS 2:**\
-Banquet Room\
-Youth Room\
-Mosaic Room
+[Banquet Room](#banquet)\
+[Youth Room](#youth-room)\
+[Mosaic Room](#mosaic)
 
 **BREAKOUT ROOMS 3:**\
-Banquet Room\
-Youth Room\
-Mosaic Room\
-NW Conference Room
+[Banquet Room](#banquet)\
+[Youth Room](#youth-room)\
+[Mosaic Room](#mosaic)\
+[NW Conference Room](#northwest-conference)
 {{< /legend >}}
