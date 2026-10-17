@@ -24,10 +24,10 @@
       icon: mdi:map-marker-star-outline
     - title: "Monday Late Night: Brick House Tavern"
       url: https://maps.app.goo.gl/peVZGSBppxzPoiWx7
-      icon: mdi:glass-mug-variant
+      icon: mdi:campfire
     - title: "Tuesday Late Night: Narwhal’s Crafted"
       url: https://maps.app.goo.gl/vYDrxaAGkrQZkeM36
-      icon: mdi:glass-mug-variant
+      icon: mdi:food
     - title: PCA Bookstore Discount Code
       url: /bookstore/
       icon: fa-solid:book
