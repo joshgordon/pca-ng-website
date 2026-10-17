@@ -13,7 +13,7 @@
       href="{{ strings.TrimPrefix "/" .Site.Params.favicon | relURL }}"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="{{ "style.css" | relURL }}" />
+    {{ with resources.Get "style.css" | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}" />{{ end }}
     <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
     <meta name="description" content="{{ .Site.Params.description }}" />
     <meta property="og:title" content="{{ .Site.Title }}" />
@@ -73,6 +73,6 @@
 
       {{ partial "cdm-logo.html" . }}
     </div>
-    <script src="{{ "script.js" | relURL }}"></script>
+    {{ with resources.Get "script.js" | fingerprint }}<script src="{{ .RelPermalink }}"></script>{{ end }}
   </body>
 </html>
