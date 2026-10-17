@@ -626,7 +626,22 @@ a.addr {
 .c-desk {
   fill: none;
   stroke: #333;
-  stroke-width: 3;
+  stroke-width: 13;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.c-gap {
+  fill: none;
+  stroke: var(--bg-color);
+  stroke-width: 8;
+}
+.c-gap-room {
+  stroke: #1189d6;
+}
+.c-door {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
 }
 .c-hall-area {
   fill: transparent;
@@ -686,6 +701,12 @@ a.room-link,
   }
   .dark .c-desk {
     stroke: #ccc;
+  }
+  .dark .c-gap-room {
+    stroke: #1667a6;
+  }
+  .dark .c-door {
+    stroke: #c9d3dd;
   }
 }
 .map-legend {

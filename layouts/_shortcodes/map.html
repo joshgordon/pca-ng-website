@@ -28,7 +28,7 @@
     <text x="243" y="146" class="c-wordmark">THE COMMONS</text>
 
     <!-- outer walls -->
-    <path class="c-wall" d="M485 187H650M902 187H1180M1235 187H1310M1887 187V990M1595 990H1887M1090 985H1170M1225 985H1450M1505 985L1565 965M1057 965L1090 985M1778 187H1790" />
+    <path class="c-wall" d="M485 187H650M902 187H1185M1229 187H1323M1887 187V990M1595 990H1887M1090 985H1172M1223 985H1452M1503 985L1565 965M1057 965L1090 985M1778 187H1790M1806 187H1818M128 495V501M128 534V540M484 495V501M484 534V540" />
 
     <!-- west wing -->
     <g id="kitchen" class="room">
@@ -40,15 +40,15 @@
       <g class="c-label"><rect x="148" y="225" width="142" height="40" /><text x="219" y="256">Game Room</text></g>
     </g>
     <g id="northwest-conference" class="room">
-      <rect x="315" y="187" width="170" height="110" class="c-room" />
+      <polygon points="315,187 485,187 485,248 458,248 458,297 315,297" class="c-room" />
       <g class="c-label"><rect x="345" y="207" width="108" height="72" /><text x="399" y="238" class="c-small">Northwest</text><text x="399" y="268" class="c-small">Conference</text></g>
     </g>
     <g id="youth-room" class="room">
-      <rect x="128" y="297" width="357" height="198" class="c-room" />
+      <polygon points="128,297 458,297 458,352 485,352 485,495 128,495" class="c-room" />
       <g class="c-label"><rect x="248" y="362" width="140" height="40" /><text x="318" y="393">Youth Room</text></g>
     </g>
     <g id="gym" class="room">
-      <polygon points="128,540 482,540 482,980 350,980 248,1050 128,1050" class="c-room" />
+      <polygon points="128,540 482,540 482,980 334,980 248,1050 128,1050" class="c-room" />
       <g class="c-label"><rect x="236" y="725" width="140" height="46" /><text x="306" y="759">Gym</text></g>
     </g>
     <g id="coffee-shop" class="room">
@@ -66,15 +66,15 @@
       <g class="c-label"><rect x="1400" y="202" width="142" height="45" /><text x="1471" y="235">Mosaic</text></g>
     </g>
     <polygon points="1615,187 1778,187 1778,243 1685,243 1685,260 1615,260" class="c-room" />
-    <path class="c-wall" d="M1685 187V243" />
+    <path class="c-wall" d="M1685 187V230" />
     <rect x="1818" y="187" width="69" height="168" class="c-room" />
     <path class="c-wall" d="M1818 270H1887" />
     <g id="clubhouse" class="room">
-      <polygon points="1310,325 1380,325 1380,403 1445,403 1445,540 1310,540" class="c-room" />
-      <path class="c-wall" d="M1310 362H1380" />
+      <polygon points="1310,325 1385,325 1385,406 1451,406 1451,540 1310,540" class="c-room" />
+      <path class="c-wall" d="M1310 362H1385" />
       <g class="c-label"><rect x="1323" y="445" width="119" height="45" /><text x="1382" y="478">Clubhouse</text></g>
     </g>
-    <polygon points="1432,325 1602,325 1602,540 1445,540 1445,403 1432,403" class="c-room" />
+    <polygon points="1437,325 1602,325 1602,540 1451,540 1451,383 1437,383" class="c-room" />
     <rect x="1602" y="325" width="128" height="215" class="c-room" />
     <path class="c-wall" d="M1602 402H1730M1668 402V540M1602 472H1668" />
     <g id="offices" class="room">
@@ -92,6 +92,11 @@
     </g>
     <rect x="1633" y="758" width="67" height="52" fill="#000" />
 
+    <!-- doors: a gap in the wall plus the swing of each leaf -->
+    <path class="c-gap" d="M281 187L299 187M458 252L458 290M458 305L458 341M138 495L170 495M128 501L128 534M484 501L484 534M482 557L482 605M351 980L334 980M688 980L670 980M717 980L735 980M950.5 802.5L972.5 827.5M1185 187L1229 187M1323 198L1323 213M1806 187L1790 187M1451 399L1451 385M1384 700L1423 700M1172 985L1223 985M1452 985L1503 985M1628 260H1645M1628 325H1645" />
+    <path class="c-gap c-gap-room" d="M215 297H249" />
+    <path class="c-door" d="M281 187L281 169A18 18 0 0 1 299 187M458 252L477 252A19 19 0 0 1 458 271M458 290L477 290A19 19 0 0 0 458 271M458 305L476 305A18 18 0 0 1 458 323M458 341L476 341A18 18 0 0 0 458 323M138 495L138 511A16 16 0 0 0 154 495M170 495L170 511A16 16 0 0 1 154 495M128 501L111.5 501A16.5 16.5 0 0 0 128 517.5M128 534L111.5 534A16.5 16.5 0 0 1 128 517.5M484 501L467.5 501A16.5 16.5 0 0 0 484 517.5M484 534L467.5 534A16.5 16.5 0 0 1 484 517.5M482 557L506 557A24 24 0 0 1 482 581M482 605L506 605A24 24 0 0 0 482 581M351 980L351 997A17 17 0 0 1 334 980M688 980L688 998A18 18 0 0 1 670 980M717 980L717 998A18 18 0 0 0 735 980M950.5 802.5L962.9 791.4A16.7 16.7 0 0 1 961.5 815M972.5 827.5L984.9 816.4A16.7 16.7 0 0 0 961.5 815M1185 187L1185 165A22 22 0 0 1 1207 187M1229 187L1229 165A22 22 0 0 0 1207 187M1323 198L1308 198A15 15 0 0 0 1323 213M1806 187L1806 171A16 16 0 0 0 1790 187M1451 399L1437 399A14 14 0 0 1 1451 385M1384 700L1384 719.5A19.5 19.5 0 0 0 1403.5 700M1423 700L1423 719.5A19.5 19.5 0 0 1 1403.5 700M1172 985L1172 1010.5A25.5 25.5 0 0 0 1197.5 985M1223 985L1223 1010.5A25.5 25.5 0 0 1 1197.5 985M1452 985L1452 1010.5A25.5 25.5 0 0 0 1477.5 985M1503 985L1503 1010.5A25.5 25.5 0 0 1 1477.5 985" />
+
     <!-- restrooms -->
     <rect x="337" y="460" width="63" height="32" class="c-room" />
     <g class="c-icon">
@@ -104,15 +109,15 @@
       <use href="#m-woman" x="1513" y="366" width="24" height="50" />
     </g>
 
-    <!-- reception desk -->
-    <g class="c-desk">
-      <rect x="1265" y="842" width="92" height="48" />
-      <rect x="1268" y="810" width="30" height="22" />
-      <path d="M1283 832v10M1312 842q0-22 16-22t16 22" />
-      <circle cx="1328" cy="808" r="10" />
-      <circle cx="1362" cy="806" r="11" />
-      <rect x="1350" y="822" width="24" height="46" rx="8" />
-      <path d="M1356 868v24M1368 868v24" />
+    <!-- reception desk, traced from the original icon -->
+    <g class="c-desk" transform="translate(1257 800) scale(0.203)">
+      <path d="M140 188H78V75H248V188H185M140 205V124H185V205" />
+      <circle cx="360.5" cy="50.5" r="46.5" />
+      <path d="M292 205V160Q292 128 324 128H398Q430 128 430 160V205M328 188V203M390 188V203" />
+      <path d="M440 232H57V442H385M445 442H470M78 452V470H485" />
+      <circle cx="543" cy="50.5" r="46.5" />
+      <path d="M476 168Q476 126.5 518 126.5H568Q610 126.5 610 168V268Q610 296 586 308V451Q586 471 566 471H520Q500.5 471 500.5 451V308Q476 296 476 268Z" />
+      <path d="M632 232H651V442H632V468H605" />
     </g>
   </svg>
   </div>
