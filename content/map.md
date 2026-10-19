@@ -13,7 +13,7 @@ params:
 [Banquet Room](#banquet)
 
 **GATHERING ROOMS:**\
-[Banquet Room](#banquet)\
+[Fellowship Hall](#fellowship-hall)\
 [Youth Room](#youth-room)
 
 **BREAKOUT ROOMS 1:**\
