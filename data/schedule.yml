@@ -4,20 +4,20 @@
   events:
     - name: Certification Final Presentations
       time: 2:00 PM
-      location: TBA
+      location: Mosaic Room
       note: Required for 25-26 Certification Cohort; Everyone welcome.
     - name: Conference Check-in
       time: 4:00 PM
       location: Youth Room
     - name: Welcome Session
       time: 4:30 PM
-      location: Fellowship Hall
+      location: Banquet Room
     - name: Dinner
       time: 6:00 PM
-      location: Banquet Room
+      location: Fellowship Hall
     - name: Large Group - Session 1
       time: 7:00 PM
-      location: Fellowship Hall
+      location: Banquet Room
     - name: Late night hangout
       time: 8:30 PM
       location: Brick House Tavern
@@ -30,7 +30,7 @@
       location: Youth Room
     - name: Large Group - Session 2
       time: 9:30 AM
-      location: Fellowship Hall
+      location: Banquet Room
     - name: Breakout Seminars
       time: 10:45 AM
       seminars: "10:45"
@@ -39,7 +39,7 @@
       seminars: "11:50"
     - name: Lunch
       time: 12:30 PM
-      location: Banquet Room
+      location: Fellowship Hall
     - name: Breakout Seminars
       time: 1:40 PM
       seminars: "1:40"
@@ -52,7 +52,7 @@
           location: Youth Room
     - name: Large Group - Session 3
       time: 7:00 PM
-      location: Fellowship Hall
+      location: Banquet Room
     - name: Late Night Hangout
       time: 8:30 PM
       location: Narwhal’s Crafted
@@ -65,9 +65,9 @@
       location: Youth Room
     - name: Panel Q&A
       time: 9:30 AM
-      location: Fellowship Hall
+      location: Banquet Room
     - name: Large Group - Session 4
       time: 10:30 AM
-      location: Fellowship Hall
+      location: Banquet Room
     - name: Head Home
       time: 11:30 AM
